@@ -2,6 +2,13 @@
 
 $font-family-base: 'Roboto', sans-serif;
 $font-family-cond: 'Roboto Condensed', sans-serif;
+$font-size: 14px;
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+//$text-color:;
+//$link-color:;
+//$link-hover-color:;
+//$link-hover-decoration:;
 
 // Scaffolding
 
@@ -37,5 +44,10 @@ $btn-font-weight: 'Roboto', sans-serif;
 $headings-font-weight: 700;
 $headings-line-height: 1.1 !default;
 $headings-color: inherit !default;
+//$font-size-h1:;
+//$font-size-h2:; 
+//$font-size-h3:;
+//$font-size-h4:;
+//$font-size-h5:;
 
 // Typography
