@@ -1,0 +1,105 @@
+.ghost {
+  font-size: 16px;
+  padding: 5px 10px;
+  height: 42px;
+  border-radius: 0;
+  min-width: 220px;
+  margin: 20px auto;
+  color: #fff;
+  background: 0 0;
+  text-decoration: none;
+  border: 1px solid #fff;
+  display: block;
+  position: relative;
+  font-family: colfax-web, Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s;
+}
+.ghost::after,
+.ghost::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s;
+}
+.ghost::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid $gold;
+  border-left: 1px solid $gold;
+}
+.ghost::after {
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid $gold;
+  border-bottom: 1px solid $gold;
+}
+.ghost:hover {
+  color: #fff;
+  border-color: $gold;
+}
+.ghost:hover::after,
+.ghost:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.ghost1{
+  font-size: 16px;
+  padding: 5px 10px;
+  height: 42px;
+  border-radius: 0;
+  min-width: 220px;
+  margin: 20px auto;
+  color: $gold;
+  background: 0 0;
+  text-decoration: none;
+  border: 1px solid $gold;
+  display: block;
+  position: relative;
+  font-family: colfax-web, Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s;
+}
+.ghost1::after,
+.ghost1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s;
+}
+.ghost1::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid $gold;
+  border-left: 1px solid $gold;
+}
+.ghost1::after {
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid $gold;
+  border-bottom: 1px solid $gold;
+}
+.ghost1:hover {
+  color: $gold;
+  border-color: $gold;
+}
+.ghost1:hover::after,
+.ghost1:hover::before {
+  width: 100%;
+  height: 100%;
+}

@@ -3,10 +3,15 @@
 @import "bootstrap";
 @import "fonts";
 @import "navbar";
+@import "buttons";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 
 html {
 	font-weight: 300;
+}
+
+article {
+	font-size: 16px;
 }
 
 .new h2 {
@@ -19,7 +24,7 @@ html {
 
 //SLIDER
 
-.extra-slider li div {
+.extra-slider li > div {
 	color: $gold;
 	text-align: center;
 	font-family: 'anahit';
@@ -28,13 +33,13 @@ html {
 	margin: 0;		
 	width: 85%;
 	height: 200px;	
-	line-height: 200px;
+	padding-top:40px;
 	background-color: rgba(0,0,0,0.9);
 	position: absolute;
 	top:0;
 	left: 0;
 	opacity: 0;
-	transition: opacity 400ms ease-in-out 0.1s;
+	transition: opacity 400ms ease-in-out 0.1s;	
 	@include centerer(true,true);	
 }
 .extra-slider li.active div {
@@ -47,6 +52,8 @@ footer {
 	height: 300px;
 }
 
+
+//НОВИНКИ
 .card {
   background: #fff;
   border-radius: 2px;  
@@ -75,3 +82,51 @@ footer {
 .card-1:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+//НОВИНКИ
+
+//КАТАЛОГ ГЛАВНАЯ
+.homepage_catalog {
+	&_padding {
+		padding: 0;
+	}
+	&_item {
+		width: 100%;
+		height: 100%;		
+		
+		position: relative;		
+		&_title {
+			font-family: 'anahit';
+			font-weight: 400;			
+			font-size: 28px;
+			text-align: center;			
+			min-height:300px;
+			background-color: rgba(0,0,0,0.6);
+			position: relative;	
+			&_border {
+				max-height:1px;
+				border:1px solid #fff;
+				width: 30%;
+				margin-left:35%;
+				margin-top:5px;
+			}
+			section {
+				color:#fff;
+				@include centerer(true,true);
+			}		
+		}
+	}
+	&_kpb {
+		background: url('../img/slide1.jpg') no-repeat;
+		background-size:cover;
+	}
+	&_pokr {
+		background: url('../img/slide2.jpg') no-repeat;
+		background-size:cover;
+	}
+	&_namatras {
+		background: url('../img/slide3.jpg') no-repeat;
+		background-size:cover;
+	}
+	
+}
+//КАТАЛОГ ГЛАВНАЯ

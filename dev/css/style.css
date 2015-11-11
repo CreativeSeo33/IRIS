@@ -4654,11 +4654,129 @@ button.close {
   /* line 16, ../sass/_navbar.scss */
   .dropdown:hover .dropdown-menu {
     display: block; } }
-/* line 8, ../sass/style.scss */
+/* line 1, ../sass/_buttons.scss */
+.ghost {
+  font-size: 16px;
+  padding: 5px 10px;
+  height: 42px;
+  border-radius: 0;
+  min-width: 220px;
+  margin: 20px auto;
+  color: #fff;
+  background: 0 0;
+  text-decoration: none;
+  border: 1px solid #fff;
+  display: block;
+  position: relative;
+  font-family: colfax-web, Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s; }
+
+/* line 20, ../sass/_buttons.scss */
+.ghost::after,
+.ghost::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s; }
+
+/* line 31, ../sass/_buttons.scss */
+.ghost::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #907B49;
+  border-left: 1px solid #907B49; }
+
+/* line 37, ../sass/_buttons.scss */
+.ghost::after {
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid #907B49;
+  border-bottom: 1px solid #907B49; }
+
+/* line 43, ../sass/_buttons.scss */
+.ghost:hover {
+  color: #fff;
+  border-color: #907B49; }
+
+/* line 47, ../sass/_buttons.scss */
+.ghost:hover::after,
+.ghost:hover::before {
+  width: 100%;
+  height: 100%; }
+
+/* line 55, ../sass/_buttons.scss */
+.ghost1 {
+  font-size: 16px;
+  padding: 5px 10px;
+  height: 42px;
+  border-radius: 0;
+  min-width: 220px;
+  margin: 20px auto;
+  color: #907B49;
+  background: 0 0;
+  text-decoration: none;
+  border: 1px solid #907B49;
+  display: block;
+  position: relative;
+  font-family: colfax-web, Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s; }
+
+/* line 74, ../sass/_buttons.scss */
+.ghost1::after,
+.ghost1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  -webkit-transition: .35s;
+  -moz-transition: .35s;
+  transition: 0.35s; }
+
+/* line 85, ../sass/_buttons.scss */
+.ghost1::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #907B49;
+  border-left: 1px solid #907B49; }
+
+/* line 91, ../sass/_buttons.scss */
+.ghost1::after {
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid #907B49;
+  border-bottom: 1px solid #907B49; }
+
+/* line 97, ../sass/_buttons.scss */
+.ghost1:hover {
+  color: #907B49;
+  border-color: #907B49; }
+
+/* line 101, ../sass/_buttons.scss */
+.ghost1:hover::after,
+.ghost1:hover::before {
+  width: 100%;
+  height: 100%; }
+
+/* line 9, ../sass/style.scss */
 html {
   font-weight: 300; }
 
-/* line 12, ../sass/style.scss */
+/* line 13, ../sass/style.scss */
+article {
+  font-size: 16px; }
+
+/* line 17, ../sass/style.scss */
 .new h2 {
   color: #907B49;
   text-align: center;
@@ -4666,8 +4784,8 @@ html {
   font-family: 'anahit';
   font-weight: 400; }
 
-/* line 22, ../sass/style.scss */
-.extra-slider li div {
+/* line 27, ../sass/style.scss */
+.extra-slider li > div {
   color: #907B49;
   text-align: center;
   font-family: 'anahit';
@@ -4676,7 +4794,7 @@ html {
   margin: 0;
   width: 85%;
   height: 200px;
-  line-height: 200px;
+  padding-top: 40px;
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 0;
@@ -4688,15 +4806,15 @@ html {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/* line 40, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .extra-slider li.active div {
   opacity: 1; }
 
-/* line 46, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 footer {
   height: 300px; }
 
-/* line 50, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .card {
   background: #fff;
   border-radius: 2px;
@@ -4706,22 +4824,66 @@ footer {
   margin-bottom: 30px;
   color: #907B49;
   font-weight: 400; }
-  /* line 59, ../sass/style.scss */
+  /* line 66, ../sass/style.scss */
   .card_description {
     padding: 25px;
     font-size: 16px;
     font-weight: 700; }
-  /* line 64, ../sass/style.scss */
+  /* line 71, ../sass/style.scss */
   .card span {
     color: #333;
     font-weight: 400;
     margin-left: 15px; }
 
-/* line 70, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .card-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.2s ease-in-out; }
 
-/* line 75, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .card-1:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+/* line 89, ../sass/style.scss */
+.homepage_catalog_padding {
+  padding: 0; }
+/* line 92, ../sass/style.scss */
+.homepage_catalog_item {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  /* line 97, ../sass/style.scss */
+  .homepage_catalog_item_title {
+    font-family: 'anahit';
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative; }
+    /* line 105, ../sass/style.scss */
+    .homepage_catalog_item_title_border {
+      max-height: 1px;
+      border: 1px solid #fff;
+      width: 30%;
+      margin-left: 35%;
+      margin-top: 5px; }
+    /* line 112, ../sass/style.scss */
+    .homepage_catalog_item_title section {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+/* line 118, ../sass/style.scss */
+.homepage_catalog_kpb {
+  background: url("../img/slide1.jpg") no-repeat;
+  background-size: cover; }
+/* line 122, ../sass/style.scss */
+.homepage_catalog_pokr {
+  background: url("../img/slide2.jpg") no-repeat;
+  background-size: cover; }
+/* line 126, ../sass/style.scss */
+.homepage_catalog_namatras {
+  background: url("../img/slide3.jpg") no-repeat;
+  background-size: cover; }
