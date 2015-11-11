@@ -6,8 +6,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Document</title>
 	<meta name="description" content="" />
-    <meta name="keywords" content="" />
+  <meta name="keywords" content="" />
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extra.slider.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -64,9 +65,66 @@
   </div><!-- /.container-fluid -->
 </nav>	
 
+<!-- SLIDER -->
+
+<section class="main-content">
+
+    <article class="single-content" id="margin">
+
+  <p class="responsive-alert">You might need a wider screen for this demo...</p>
+
+  <div class="extra-slider">
+    <div class="wrapper">
+      <ul style="padding:0;">
+        <li>
+          <img src="http://slider.extralagence.com/demo/img/gallery/img3.jpg" alt="" width="900" height="500" class="img-responsive">
+          <p>
+            <a href="http://bit.ly/1epg2cd">Download</a>&nbsp;&#8226;&nbsp;By&nbsp;<a href="http://www.fanq.pt">Diogo Tavares</a>
+          </p>
+        </li>
+        <li>
+          <img src="http://slider.extralagence.com/demo/img/gallery/img1.jpg" alt="" width="900" height="500" class="img-responsive">
+          <p>
+            <a href="http://bit.ly/H75Z08">Download</a>&nbsp;&#8226;&nbsp;By&nbsp;<a href="http://www.florianklauer.de">Florian Klauer</a>
+          </p>
+        </li>
+        <li>
+          <img src="http://slider.extralagence.com/demo/img/gallery/img6.jpg" alt="" width="900" height="500" class="img-responsive">
+          <p>
+            <a href="http://bit.ly/1b3A4fn">Download</a>&nbsp;&#8226;&nbsp;By&nbsp;<a href="http://www.nilssonlee.se">Jonas Nilsson Lee</a>
+          </p>
+        </li>
+        <li>
+          <img src="http://slider.extralagence.com/demo/img/gallery/img2.jpg" alt="" width="900" height="500" class="img-responsive">
+          <p>
+            <a href="http://bit.ly/K6nD6G">Download</a>&nbsp;&#8226;&nbsp;By&nbsp;<a href="http://www.carlsson.it">Elias Carlsson</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="navigation">
+      <a href="#" class="prev">Previous</a>
+      <a href="#" class="next">Next</a>
+    </div>
+    <div class="pagination"></div>
+  </div>
+ 
+</article>
+</section>
+
+<!-- SLIDER -->
+
 <script src="libs/jquery/dist/jquery.min.js"></script>
 <script src="libs/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<script src="libs/gsap/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/extra.slider.js"></script>
+<script>
 
+jQuery(document).ready(function($) {
+    $(".extra-slider").extraSlider();
+});
+</script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!--<script src="/js/bootstrap.min.js"></script>-->
        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
