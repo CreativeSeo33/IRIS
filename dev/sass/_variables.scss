@@ -33,6 +33,14 @@ $navbar-margin-bottom:0;
 $background-navbar: transparent;
 $background-navbar-expand: #171B1E;
 $navbar-default-bg: transparent;
+$nav-link-padding:20px;
+.dropdown-menu > li > a {
+	padding: 8px 25px !important;
+	border-top:1px solid #E5E5E5;
+}
+.dropdown-menu > li:first-child > a {
+	border:none;
+}
 .navbar {border:none;}
 .navbar-brand {padding:15px 15px !important;}
 //navbar-padding-horizontal:;

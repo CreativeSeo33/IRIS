@@ -6,9 +6,6 @@
 @import "buttons";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 
-html {
-	font-weight: 300;
-}
 
 article {
 	font-size: 16px;
@@ -61,7 +58,7 @@ article {
 	top:0;
 	left: 0;
 	opacity: 0;
-	transition: opacity 400ms ease-in-out 0.1s;	
+	transition: opacity 200ms ease-in-out 0.1s;	
 	@include centerer(true,true);	
 }
 .extra-slider li.active div {
