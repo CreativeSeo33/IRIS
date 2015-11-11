@@ -24,13 +24,19 @@ $body-bg:               #fff !default;
 
 // Navbar
 
-$navbar-height:60px;
+$navbar-height:80px;
 $navbar-default-link-color: $black;
 // $navbar-default-link-hover-color:;
+$navbar-border-radius:0;
+$navbar-margin-bottom:0;
 $background-navbar: transparent;
 $background-navbar-expand: #171B1E;
 $navbar-default-bg: transparent;
 .navbar {border:none;}
+.navbar-brand {padding:15px 15px !important;}
+//navbar-padding-horizontal:;
+
+
 // Navbar
 
 //FOOTER
