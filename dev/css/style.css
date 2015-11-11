@@ -1,10 +1,11 @@
 @import url(../fonts/Roboto/roboto.css);
+@import url(../fonts/anahit/anahit.css);
 @import url(../libs/font-awesome/css/font-awesome.min.css);
-/* line 35, ../sass/_variables.scss */
+/* line 36, ../sass/_variables.scss */
 .navbar {
   border: none; }
 
-/* line 36, ../sass/_variables.scss */
+/* line 37, ../sass/_variables.scss */
 .navbar-brand {
   padding: 15px 15px !important; }
 
@@ -4644,28 +4645,39 @@ button.close {
   .navbar_phone {
     font-weight: 700;
     font-size: 22px; }
+    /* line 9, ../sass/_navbar.scss */
+    .navbar_phone > a {
+      color: #907B49 !important; }
 
 @media only screen and (min-width: 768px) {
   /* Make Navigation Toggle on Desktop Hover */
-  /* line 13, ../sass/_navbar.scss */
+  /* line 16, ../sass/_navbar.scss */
   .dropdown:hover .dropdown-menu {
     display: block; } }
 /* line 8, ../sass/style.scss */
 html {
   font-weight: 300; }
 
-/* line 14, ../sass/style.scss */
-.extra-slider li div {
-  color: #FFFFFF;
+/* line 12, ../sass/style.scss */
+.new h2 {
+  color: #907B49;
   text-align: center;
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 32px;
+  margin: 40px 0;
+  font-family: 'anahit';
+  font-weight: 400; }
+
+/* line 22, ../sass/style.scss */
+.extra-slider li div {
+  color: #907B49;
+  text-align: center;
+  font-family: 'anahit';
+  font-weight: 400;
+  font-size: 36px;
   margin: 0;
-  width: 100%;
+  width: 85%;
   height: 200px;
   line-height: 200px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 0;
   left: 0;
@@ -4676,6 +4688,40 @@ html {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/* line 32, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .extra-slider li.active div {
   opacity: 1; }
+
+/* line 46, ../sass/style.scss */
+footer {
+  height: 300px; }
+
+/* line 50, ../sass/style.scss */
+.card {
+  background: #fff;
+  border-radius: 2px;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #907B49;
+  font-weight: 400; }
+  /* line 59, ../sass/style.scss */
+  .card_description {
+    padding: 25px;
+    font-size: 16px;
+    font-weight: 700; }
+  /* line 64, ../sass/style.scss */
+  .card span {
+    color: #333;
+    font-weight: 400;
+    margin-left: 15px; }
+
+/* line 70, ../sass/style.scss */
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out; }
+
+/* line 75, ../sass/style.scss */
+.card-1:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }

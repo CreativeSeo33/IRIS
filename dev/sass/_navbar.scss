@@ -5,7 +5,10 @@
 	box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.61);
 	&_phone {
 		font-weight:700;
-		font-size:22px;
+		font-size:22px;		
+		& > a {
+			color: $gold !important;	
+		} 
 	}
 }
 @media only screen and (min-width : 768px) {
