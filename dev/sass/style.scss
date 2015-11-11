@@ -4,6 +4,7 @@
 @import "fonts";
 @import "navbar";
 @import "buttons";
+@import "footer";
 @import "../libs/font-awesome/css/font-awesome.min.css";
 
 a {
@@ -69,10 +70,6 @@ article {
 
 //SLIDER
 
-footer {
-	height: 300px;
-}
-
 
 //НОВИНКИ
 .card {
@@ -92,10 +89,16 @@ footer {
   	padding: 25px;
   	font-size:16px;
   	font-weight: 700;
-  }
+  	&_fabric {
+ 		font-weight: 500;
+ 		font-size: 14px;
+ 		color: #b1b1b3;
+ 		padding-top: 5px;
+  	}
+  }  
   a {
 	color: $gold;
-	text-decoration: none;
+	//text-decoration: none;
   }
   span {
   	color: #333;
