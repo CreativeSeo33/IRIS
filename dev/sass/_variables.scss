@@ -26,13 +26,14 @@ $body-bg:               #fff !default;
 // Navbar
 
 $navbar-height:80px;
-$navbar-default-link-color: $black;
-// $navbar-default-link-hover-color:;
+$navbar-default-link-color: #67635e;
+$navbar-default-link-hover-color: $gold;
+$dropdown-link-hover-color: $gold;
 $navbar-border-radius:0;
 $navbar-margin-bottom:0;
-$background-navbar: transparent;
+//$background-navbar: #f1f1f1;
 $background-navbar-expand: #171B1E;
-$navbar-default-bg: transparent;
+$navbar-default-bg: #f0f0f0;
 $nav-link-padding:20px;
 $border-radius-base:0;
 .dropdown-menu > li > a {
@@ -57,7 +58,7 @@ $border-radius-base:0;
 
 // BUTTONS
 
-$btn-font-weight: 'Roboto', sans-serif;
+
 
 // BUTTONS
 

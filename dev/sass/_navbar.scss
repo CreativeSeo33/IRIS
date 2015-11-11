@@ -1,5 +1,7 @@
-.navbar {
-	z-index: 100;
+.navbar {	
+	font-size:13px;	
+	text-transform: uppercase;
+	z-index: 11;
 	-webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.61);
 	-moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.61);
 	box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.61);
@@ -14,8 +16,38 @@
 @media only screen and (min-width : 768px) {
     /* Make Navigation Toggle on Desktop Hover */
     .dropdown:hover .dropdown-menu {
+    	font-size:13px;	
         display: block;
         opacity: 1;
     }
+}
+.dropdown-menu {
+	//box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.29);
+}
+.dropdown-menu::before {
+    background: #f0f0f0 none repeat scroll 0 0;
+    content: " ";
+    height: 10px;
+    left: -15px;
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+.dropdown-menu::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgba(136, 183, 213, 0) rgba(136, 183, 213, 0) #ffffff;
+    border-image: none;
+    border-style: solid;
+    border-width: 10px;
+    bottom: 100%;
+    content: " ";
+    height: 0;
+    left: 20px;
+    pointer-events: none;
+    position: absolute;
+    width: 0;
 }
 

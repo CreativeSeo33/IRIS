@@ -1,4 +1,4 @@
-.ghost {
+.ghost-white{
   font-size: 16px;
   padding: 5px 10px;
   height: 42px;
@@ -16,43 +16,43 @@
   -webkit-transition: .35s;
   -moz-transition: .35s;
   transition: 0.35s;
-}
-.ghost::after,
-.ghost::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  -webkit-transition: .35s;
-  -moz-transition: .35s;
-  transition: 0.35s;
-}
-.ghost::before {
-  top: 0;
-  left: 0;
-  border-top: 1px solid $gold;
-  border-left: 1px solid $gold;
-}
-.ghost::after {
-  right: 0;
-  bottom: 0;
-  border-right: 1px solid $gold;
-  border-bottom: 1px solid $gold;
-}
-.ghost:hover {
-  color: #fff;
-  border-color: $gold;
-}
-.ghost:hover::after,
-.ghost:hover::before {
-  width: 100%;
-  height: 100%;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    transition: 0.35s;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+  }
+  &::after {
+    right: 0;
+    bottom: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  &:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+  &:hover::after,
+  &:hover::before {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 
 
-.ghost1{
+.ghost-gold{
   font-size: 16px;
   padding: 5px 10px;
   height: 42px;
@@ -70,36 +70,36 @@
   -webkit-transition: .35s;
   -moz-transition: .35s;
   transition: 0.35s;
-}
-.ghost1::after,
-.ghost1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  -webkit-transition: .35s;
-  -moz-transition: .35s;
-  transition: 0.35s;
-}
-.ghost1::before {
-  top: 0;
-  left: 0;
-  border-top: 1px solid $gold;
-  border-left: 1px solid $gold;
-}
-.ghost1::after {
-  right: 0;
-  bottom: 0;
-  border-right: 1px solid $gold;
-  border-bottom: 1px solid $gold;
-}
-.ghost1:hover {
-  color: $gold;
-  border-color: $gold;
-}
-.ghost1:hover::after,
-.ghost1:hover::before {
-  width: 100%;
-  height: 100%;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    transition: 0.35s;
+  }
+  &::before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid $gold;
+    border-left: 1px solid $gold;
+  }
+  &::after {
+    right: 0;
+    bottom: 0;
+    border-right: 1px solid $gold;
+    border-bottom: 1px solid $gold;
+  }
+  &:hover {
+    color: $gold;
+    border-color: $gold;
+  }
+  &:hover::after,
+  &:hover::before {
+    width: 100%;
+    height: 100%;
+  }
 }
