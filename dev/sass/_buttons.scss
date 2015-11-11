@@ -41,7 +41,7 @@
   border-bottom: 1px solid $gold;
 }
 .ghost:hover {
-  color: #fff;
+  color: $gold;
   border-color: $gold;
 }
 .ghost:hover::after,

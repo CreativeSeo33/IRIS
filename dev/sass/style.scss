@@ -14,6 +14,28 @@ article {
 	font-size: 16px;
 }
 
+.svg-h2-block {
+	position: relative;
+	width: 100%;
+	height:70px;
+	margin-top:20px;
+}
+
+.svg-h2 {
+	@include centerer(true,false);
+}
+.svg-line {
+	display: inline-block;
+	&-h2 {
+		color: $gold;				
+		font-family: 'anahit';
+		font-weight: 400;
+		font-size:30px;
+		display: inline-block;
+		padding: 0 10px;
+	}
+}
+
 .new h2 {
 	color: $gold;
 	text-align:center;
