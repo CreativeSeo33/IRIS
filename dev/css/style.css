@@ -4664,26 +4664,6 @@ button.close {
   .dropdown:hover .dropdown-menu {
     display: block;
     opacity: 1; } }
-/* line 22, ../sass/_navbar.scss */
-.dropdown .dropdown-menu {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out 0.1s; }
-
-/* line 26, ../sass/_navbar.scss */
-.dropdown .dropdown-menu {
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  display: block;
-  overflow: hidden;
-  opacity: 0; }
-
-/* line 37, ../sass/_navbar.scss */
-.dropdown.open .dropdown-menu {
-  opacity: 1; }
-
 /* line 1, ../sass/_buttons.scss */
 .ghost {
   font-size: 16px;
@@ -4732,7 +4712,7 @@ button.close {
 
 /* line 43, ../sass/_buttons.scss */
 .ghost:hover {
-  color: #907B49;
+  color: #fff;
   border-color: #907B49; }
 
 /* line 47, ../sass/_buttons.scss */
@@ -4851,7 +4831,7 @@ article {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 200ms ease-in-out 0.1s;
+  transition: opacity 300ms ease-out;
   position: absolute;
   top: 50%;
   left: 50%;
